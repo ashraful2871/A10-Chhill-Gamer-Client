@@ -77,7 +77,7 @@ const ReviewDetails = () => {
             <p className="text-lg font-semibold">Genres: {genres}</p>
             <p className="text-lg font-semibold">Publishing Year: {year}</p>
             <p className="text-lg font-semibold">Reviewer Name: {name}</p>
-            <p className="text-lg font-semibold">Email: {email}</p>
+            <p className="text-lg font-semibold">Reviewer Email: {email}</p>
             <p className="text-lg font-semibold flex items-center gap-3">
               Rating:{" "}
               <div className="rating">
