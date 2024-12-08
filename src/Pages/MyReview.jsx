@@ -33,7 +33,6 @@ const MyReview = () => {
     );
   }
 
-  //Delete
   const handleDelete = (id) => {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
