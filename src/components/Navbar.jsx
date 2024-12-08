@@ -8,6 +8,7 @@ const Navbar = () => {
 
   const handleSignOut = () => {
     signOutUser();
+
     window.location.href = "/";
   };
   const links = (
