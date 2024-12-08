@@ -34,7 +34,6 @@ const GameWishList = () => {
       </Helmet>
       <div className="overflow-x-auto">
         <table className="table border border-gray-300 border-collapse">
-          {/* head */}
           <thead className="text-center bg-neutral text-white font-bold text-lg">
             <tr>
               <th className="border border-gray-300">Serial No.</th>
@@ -44,7 +43,6 @@ const GameWishList = () => {
             </tr>
           </thead>
           <tbody>
-            {/* row 2 */}
             {watchLists.map((watchList, idx) => (
               <tr
                 key={idx}
