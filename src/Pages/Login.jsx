@@ -18,7 +18,6 @@ const Login = () => {
     const password = formData.get("password");
     console.log(email, password);
 
-    //login
     login(email, password)
       .then((result) => {
         console.log(result.user);
@@ -43,7 +42,6 @@ const Login = () => {
       });
   };
 
-  //google login
   const handleGoogleLogin = () => {
     googleLogin()
       .then((result) => {
