@@ -79,7 +79,6 @@ const MyReview = () => {
       </Helmet>
       <div className="overflow-x-auto">
         <table className="table border border-gray-300 border-collapse">
-          {/* head */}
           <thead className="text-center bg-neutral text-white font-bold text-lg">
             <tr>
               <th className="border border-gray-300">Serial No.</th>
@@ -91,7 +90,6 @@ const MyReview = () => {
           </thead>
 
           <tbody>
-            {/* row 2 */}
             {reviews.map((review, idx) => (
               <tr
                 key={idx}
