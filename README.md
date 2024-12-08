@@ -11,11 +11,11 @@ Visit the live site: [https://assignment-10-21f7d.web.app/](https://assignment-1
 3. When user click "Explore Details" then show the specific items details and when user click ""Add to
    WatchList button then the item added to the "Game WatchList" route.
 
-   1. Here user only see his/her won watch List items.
+   - Here user only see his/her won watch List items.
 
 4. Here "All Reviews" route user can sort item rating or Year
 
-   1. Rating sort by (High to Low) .
-   2. Year sort by (Old to New) .
+   - Rating sort by (High to Low) .
+   - Year sort by (Old to New) .
 
 5. Any user can toggle "Dark" and "Light" mode.
