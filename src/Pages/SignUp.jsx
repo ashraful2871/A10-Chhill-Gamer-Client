@@ -27,24 +27,21 @@ const SignUp = () => {
     const hasLowercase = /[a-z]/;
     const hasMinLength = /.{6,}/;
 
-    // check length
     if (!hasMinLength.test(password)) {
       setError("password must be 6 character or longer");
       return;
     }
-    //check has uppercase
+
     if (!hasUppercase.test(password)) {
       setError("must be one uppercase letter");
       return;
     }
 
-    // check has lowercase
     if (!hasLowercase.test(password)) {
       setError("must be one lowercase letter");
       return;
     }
 
-    // sign up
     signUp(email, password)
       .then((result) => {
         console.log(result.user);
@@ -70,7 +67,6 @@ const SignUp = () => {
       });
   };
 
-  //google login
   const handleGoogleLogin = () => {
     googleLogin()
       .then((result) => {
