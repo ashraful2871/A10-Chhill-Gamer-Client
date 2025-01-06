@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import DarkController from "./DarkController";
 
-const Navbar = () => {
+const Navbar = ({ footerRef }) => {
   const { user, signOutUser } = useContext(AuthContext);
 
   const handleSignOut = () => {
@@ -11,6 +11,12 @@ const Navbar = () => {
 
     window.location.href = "/";
   };
+
+  const handleScrollFooter = () => {
+    if (footerRef.current.scrollIntoView({ behavior: "smooth" })) {
+    }
+  };
+
   const links = (
     <>
       <li>
@@ -23,24 +29,43 @@ const Navbar = () => {
           All Reviews
         </NavLink>
       </li>
-      <li>
-        <NavLink to="/add_review" className="font-bold">
-          Add Review
-        </NavLink>
-      </li>
-      <li>
-        {user && (
+
+      {user && (
+        <li>
+          <NavLink to="/add_review" className="font-bold">
+            Add Review
+          </NavLink>
+        </li>
+      )}
+      {user && (
+        <li>
           <NavLink to="/my_review" className="font-bold">
             My Reviews
           </NavLink>
-        )}
-      </li>
+        </li>
+      )}
       <li>
         {user && (
           <NavLink to="/game_wishlist" className="font-bold">
             Game WatchList
           </NavLink>
         )}
+      </li>
+      <li>
+        <NavLink
+          onClick={handleScrollFooter}
+          className={({ isActive }) => (isActive ? "font-bold" : undefined)}
+        >
+          Contact
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          onClick={handleScrollFooter}
+          className={({ isActive }) => (isActive ? "font-bold" : undefined)}
+        >
+          Follow Us
+        </NavLink>
       </li>
       {!user && (
         <li>
@@ -52,7 +77,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown z-10">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

@@ -15,6 +15,7 @@ import Privet from "./privet/Privet";
 import ReviewDetails from "./components/ReviewDetails";
 import UpdateReview from "./components/UpdateReview";
 import Error from "./components/Error";
+import Footer from "./components/Footer";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -60,11 +61,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/review_details/:id",
-        element: (
-          <Privet>
-            <ReviewDetails></ReviewDetails>
-          </Privet>
-        ),
+        element: <ReviewDetails></ReviewDetails>,
         loader: ({ params }) =>
           fetch(
             `https://assignment-10-eight-phi.vercel.app/reviews/${params.id}`
@@ -86,6 +83,10 @@ const router = createBrowserRouter([
             `https://assignment-10-eight-phi.vercel.app/reviews/${params.id}`
           ),
       },
+      // {
+      //   path: "/contact",
+      //   element: <Footer></Footer>,
+      // },
     ],
   },
 ]);

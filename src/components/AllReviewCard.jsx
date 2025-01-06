@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 
 const AllReviewCard = ({ review }) => {
-  const { _id, title, rating, genres, year, image } = review;
+  const { _id, title, rating, image, description, year } = review;
   return (
     <div>
       <div className="card bg-base-100 shadow-xl border">
@@ -13,9 +13,8 @@ const AllReviewCard = ({ review }) => {
           </figure>
           <div className="card-body font-semibold">
             <h2 className="card-title">{title}</h2>
-            <p>Genres: {genres}</p>
+            <h2 className="card-title">{year}</h2>
             <p className="text-lg font-semibold flex items-center gap-3">
-              Rating:{" "}
               <div className="rating">
                 <input
                   type="radio"
@@ -46,7 +45,7 @@ const AllReviewCard = ({ review }) => {
               </div>{" "}
               ({rating})
             </p>
-            <p>PubLishing Year: {year}</p>
+            <p>{description.slice(0, 50)} .....</p>
             <div className="card-actions justify-end">
               <Link to={`/review_details/${_id}`}>
                 <button className="btn btn-neutral font-bold text-base text-white">

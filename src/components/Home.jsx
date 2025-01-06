@@ -7,6 +7,7 @@ import UpcomingGames from "./UpcomingGames";
 import { Helmet } from "react-helmet";
 import { Typewriter } from "react-simple-typewriter";
 import Slider from "./slider/Slider";
+import WhyChooseUs from "./WhyChooseUs";
 
 const Home = () => {
   const loadedSixData = useLoaderData();
@@ -35,7 +36,9 @@ const Home = () => {
       </Helmet>
 
       <div className="space-y-10">
-        <Slider></Slider>
+        <div className="">
+          <Slider></Slider>
+        </div>
 
         <>
           <div className="space-y-5">
@@ -71,6 +74,12 @@ const Home = () => {
         </div>
         <hr className="border-2" />
         <UpcomingGames></UpcomingGames>
+
+        <div className="space-y-5 text-center md:text-start">
+          <h2 className="text-4xl md:text-5xl pt-12">Why Choose Us</h2>
+        </div>
+        <hr className="border-2" />
+        <WhyChooseUs></WhyChooseUs>
       </div>
     </>
   );
