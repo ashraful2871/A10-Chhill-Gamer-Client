@@ -38,15 +38,23 @@ A platform for reviewing and rating video games, allowing users to **share their
 
 #### 🏠 Home Page
 
-![Home Page - Light Mode](#)
+![Home Page - Light Mode](https://i.ibb.co.com/QFMhtvvD/Screenshot-2025-02-12-143938.png)
 
-#### 🕹️ Game Details Page
+#### 🕹️ All Review
 
-![Game Details - Light Mode](#)
+![All Review - Light Mode](https://i.ibb.co.com/nMTN3kZS/Screenshot-2025-02-12-143950.png)
 
-#### 📜 My Reviews Page
+#### 📜 Add Review
 
-![My Reviews - Light Mode](#)
+![Add Review - Light Mode](https://i.ibb.co.com/LFnVtvp/Screenshot-2025-02-12-143959.png)
+
+#### 📜 My Review
+
+![My Review - Light Mode](https://i.ibb.co.com/svy8yFNP/Screenshot-2025-02-12-144007.png)
+
+#### 📜 Game WatchLit
+
+![Game WatchLit - Light Mode](https://i.ibb.co.com/N6GsgzYW/Screenshot-2025-02-12-144018.png)
 
 ---
 
