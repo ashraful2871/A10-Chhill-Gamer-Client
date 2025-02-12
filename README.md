@@ -1,7 +1,3 @@
-Here is your updated **README** for **Chill Gamer**, formatted similarly to the **Car Rent Platform** README:
-
----
-
 # 🎮 Chill Gamer
 
 A platform for reviewing and rating video games, allowing users to **share their experiences**, **read reviews**, and **discover new games** based on ratings.
