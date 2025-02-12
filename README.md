@@ -6,7 +6,7 @@ Here is your updated **README** for **Chill Gamer**, formatted similarly to the 
 
 A platform for reviewing and rating video games, allowing users to **share their experiences**, **read reviews**, and **discover new games** based on ratings.
 
-🌐 **Live Site:** [Chill Gamer](https://assignment-10-21f7d.web.app/)
+🌐 **Live Site:** [Chill Gamer](https://assignment-10-21f7d.web.app)
 
 ---
 
@@ -16,15 +16,23 @@ A platform for reviewing and rating video games, allowing users to **share their
 
 #### 🏠 Home Page
 
-![Home Page - Dark Mode](#)
+![Home Page - Dark Mode](https://i.ibb.co.com/MyWJ8QHT/Screenshot-2025-02-12-143816.png)
 
-#### 🕹️ Game Details Page
+#### 🕹️ All Review
 
-![Game Details - Dark Mode](#)
+![All Review - Dark Mode](https://i.ibb.co.com/xqMBnLKn/Screenshot-2025-02-12-143835.png)
 
-#### 📜 My Reviews Page
+#### 📜 Add Review
 
-![My Reviews - Dark Mode](#)
+![Add Review - Dark Mode](https://i.ibb.co.com/99J1WyNR/Screenshot-2025-02-12-143847.png)
+
+#### 📜 My Review
+
+![My Review - Dark Mode](https://i.ibb.co.com/Mx2J3Fhg/Screenshot-2025-02-12-143858.png)
+
+#### 📜 Game WatchLit
+
+![Game WatchLit - Dark Mode](https://i.ibb.co.com/C3Wc72LK/Screenshot-2025-02-12-143906.png)
 
 ### ☀️ Light Mode
 
@@ -57,13 +65,13 @@ A platform for reviewing and rating video games, allowing users to **share their
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-repo/chill-gamer.git
-   cd chill-gamer
+   git clone https://github.com/ashraful2871/Chill-Gamer-Client.git
+   cd Chill-Gamer-Client
    ```
 
 ## 🔑 Environment Variables
 
-Create a `.env.local` file in the root folder and add:
+Create a `.env.local` file in the root folder and add your firebase secret key for authentication:
 
 ```sh
 VITE_apiKey=ENTER_YOUR_API_KEY_HERE
@@ -72,7 +80,6 @@ VITE_projectId=ENTER_YOUR_PROJECT_ID_HERE
 VITE_storageBucket=ENTER_YOUR_STORAGE_BUCKET_HERE
 VITE_messagingSenderId=ENTER_YOUR_MESSAGING_SENDER_ID_HERE
 VITE_appId=ENTER_YOUR_APP_ID_HERE
-VITE_API_URL=YOUR_BACKEND_API_URL_HERE
 ```
 
 ---
